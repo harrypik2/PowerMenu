@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'snow.iceos.powermenu'
+    namespace 'snow.iceos.powermenu' // Chú ý: Đổi lại theo đúng package bạn đang dùng trong log
     compileSdk 33
 
     defaultConfig {
@@ -14,4 +14,15 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    // THÊM ĐOẠN NÀY ĐỂ ĐỒNG BỘ JAVA 17
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    
+    kotlinOptions {
+        jvmTarget = '17'
+    }
 }
+
