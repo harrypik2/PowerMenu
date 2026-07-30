@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="snow.iceos.powermenu">
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <application
+        android:allowBackup="false"
+        android:label="Power Menu"
+        android:theme="@android:style/Theme.NoDisplay">
+        <service
+            android:name=".PowerMenuTileService"
+            android:exported="true"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:label="Power Menu"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
