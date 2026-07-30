@@ -1,0 +1,18 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android' version '1.9.0'
+}
+
+android {
+    namespace 'snow.iceos.powermenu'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "snow.iceos.powermenu"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
